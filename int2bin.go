@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+// Bin returns a binary representations of n (int, int8/16/32/64, uint, uint8/16/32/64) as a string. Returns an error
+// if n is of non-integer type.
 func Bin(n interface{}) (string, error) {
 	switch v := n.(type) {
 	case int:
