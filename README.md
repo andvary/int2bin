@@ -30,7 +30,8 @@ Produces:
 ```1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1111 1100 0001 1000```
 
 
-<b>Why not fmt.Printf("%b", n)?
-1. Go stores negative numbers as 2's complements, whereas %b produces the regular representation with negative sign.
+<b>Why not fmt.Printf("%b", n)?</b>
+1. Go stores negative numbers as 2's complements, whereas %b produces a regular representation with negative sign.
 2. %b displays strings of bits without spaces making long sequences somewhat hard to read.
-
+3. unlike %b, int2bin displays all bits depending on the type (8 for int8, 16 for int16 etc.), even if there are zeroes on 
+the left of MSB. 
