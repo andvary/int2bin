@@ -2,7 +2,7 @@
 import 	"github.com/andvary/int2bin"
 
 int2bin produces binary representations of integers (int, int8/16/32/64, uint, uint8/16/32/64), which may be useful, if 
-you deal with binary arithmetics a lot. 
+you deal with bitwise operations a lot. 
 
 Example:
 ```
