@@ -3,7 +3,7 @@ package int2bin
 import "testing"
 
 func TestBin(t *testing.T) {
-	t.Run("signed 8", func(t *testing.T) {
+	t.Run(" int8", func(t *testing.T) {
 		var tt = map[int8]string{
 			0:    "0000 0000",
 			1:    "0000 0001",
@@ -25,7 +25,7 @@ func TestBin(t *testing.T) {
 		}
 	})
 
-	t.Run("signed 16", func(t *testing.T) {
+	t.Run(" int16", func(t *testing.T) {
 		var tt = map[int16]string{
 			0:      "0000 0000 0000 0000",
 			1:      "0000 0000 0000 0001",
@@ -47,7 +47,7 @@ func TestBin(t *testing.T) {
 		}
 	})
 
-	t.Run("signed 32", func(t *testing.T) {
+	t.Run(" int32", func(t *testing.T) {
 		var tt = map[int32]string{
 			0:           "0000 0000 0000 0000 0000 0000 0000 0000",
 			1:           "0000 0000 0000 0000 0000 0000 0000 0001",
@@ -69,7 +69,7 @@ func TestBin(t *testing.T) {
 		}
 	})
 
-	t.Run("signed 64", func(t *testing.T) {
+	t.Run(" int64", func(t *testing.T) {
 		var tt = map[int64]string{
 			0:                    "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",
 			1:                    "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0001",
@@ -91,7 +91,7 @@ func TestBin(t *testing.T) {
 		}
 	})
 
-	t.Run("unsigned 8", func(t *testing.T) {
+	t.Run(" uint8", func(t *testing.T) {
 		var tt = map[uint8]string{
 			0:   "0000 0000",
 			1:   "0000 0001",
@@ -113,7 +113,7 @@ func TestBin(t *testing.T) {
 		}
 	})
 
-	t.Run("unsigned 16", func(t *testing.T) {
+	t.Run(" uint16", func(t *testing.T) {
 		var tt = map[uint16]string{
 			0:     "0000 0000 0000 0000",
 			1:     "0000 0000 0000 0001",
@@ -135,7 +135,7 @@ func TestBin(t *testing.T) {
 		}
 	})
 
-	t.Run("unsigned 32", func(t *testing.T) {
+	t.Run(" uint32", func(t *testing.T) {
 		var tt = map[uint32]string{
 			0:          "0000 0000 0000 0000 0000 0000 0000 0000",
 			1:          "0000 0000 0000 0000 0000 0000 0000 0001",
@@ -157,7 +157,7 @@ func TestBin(t *testing.T) {
 		}
 	})
 
-	t.Run("unsigned 64", func(t *testing.T) {
+	t.Run(" uint64", func(t *testing.T) {
 		var tt = map[uint64]string{
 			0:                    "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000",
 			1:                    "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0001",
